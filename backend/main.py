@@ -1,12 +1,10 @@
 from fastapi import FastAPI, HTTPException
 from openai import OpenAI
-import numpy as np
-import pickle
-import pandas as pd
-
+#import numpy as np
+#import pickle
+#import pandas as pd
 app = FastAPI()
-#Image prompt
-client = OpenAI(api_key="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")
+client = OpenAI(api_key)
 
 image_url = ""
 @app.get("/stories")
